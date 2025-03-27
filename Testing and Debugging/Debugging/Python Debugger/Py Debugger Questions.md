@@ -1,0 +1,5 @@
+1. I was just prompted twice when I just did the step over function of the debugger, because it just skipped over the main function that had all the code in it.
+1. The code went through every line rather than just going through the code skipping over the code that is any level lower than where the breakpoint is.
+1. Depending on the context they can be useful in different ways, however the 's' function is generally more useful, but the 'n' is still useful sometimes. The 's' function is usually more useful because shows every operation that the code performs, but the 'n' function is still useful because it means you don't have to manually go through every line code, which takes even more time when it takes place in a loop, which the 'n' function mostly skips over.
+1. The debugger outputted that total is an int and that it equals 500, while running through every line before that as well.
+1. The whatis function allows the user to determine what data type the variable that is referenced is, however the 'p' function outputs the value of the variable to the terminal, however it may encounter errors if the variable is difficult to print out in the terminal.
