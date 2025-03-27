@@ -1,0 +1,6 @@
+1. This is a logical error and a syntax error because it will output an error because it should be written with *'s instead of x's: '3.14 * radius * 2', but it is also a logical error because the radius should be squared, not multiplied by 2: '3.14 * radius ** 2'
+2. This is a logical error because the sides should be multiplied, not added: 'length * width'
+3. This code will ouptput a run-time error because it contains a divide-by-zero operation, however there is nothing wrong with the functionality of the code
+4. This code contains a syntax error because the for loop should end with a colon but it doesn't: 'for i in range(5):'
+5. This code contains a logic error because to calculate the average you sum the numbers and then divide it by the amount of numbers, not by subtracting the amount of numbers: 'return total / len(numbers)
+6. This code contains a logic error because the radius should be squared, not the diameter, so the code should either halve the input, or take the radius as input: 'math.pi * (diameter/2) ** 2'
