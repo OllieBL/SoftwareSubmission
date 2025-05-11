@@ -3,18 +3,18 @@ import random #For random damage and health
 
 
 def playerSelection(player_list, weapon_list):
-    tester = False
-    while tester == False:
+    while True:
         try:
             for i in range(len(player_list)):
-                print(f'{i}. {player_list[i].name}    {player_list[i].race}   {player_list[i].cls}    {player_list[i].atk}    {player_list[i].health} /n {weapon_list[i].name}   {weapon_list[i]}')
-            user_input = input('pick a player')
-            player_choice = player_list[user_input]
-            tester = True
+                print(f'{i}. {player_list[i].name}    {player_list[i].race}   {player_list[i].cls}    {player_list[i].atk}    {player_list[i].health} \n {weapon_list[i].name}   {weapon_list[i].category}  {weapon_list[i].dmg} \n \n')
+            user_input = input('pick a player: ')
+            player_character_choice = player_list[int(user_input)]
+            break
         except:
             print('please try again')
-        
-        return player_choice
+
+
+    return user_input
 # Create an instance of Player
 player_character = Player('Gimli', 'Dwarf', 'Fighter', 3, 180)
 
@@ -54,4 +54,5 @@ weapon_list = [
     Weapon('Bow', 'Bow', 3)
 ]
 
-playerSelection(player_list, weapon_list)
+player_choice = int(playerSelection(player_list, weapon_list))
+print(f'You have chosen: \n {player_list[player_choice].name}    {player_list[player_choice].race}   {player_list[player_choice].cls}    {player_list[player_choice].atk}    {player_list[player_choice].health} \n {weapon_list[player_choice].name}   {weapon_list[player_choice].category}  {weapon_list[player_choice].dmg} \n \n')
