@@ -18,11 +18,17 @@ class CreateCharacter:
     def set_name(self, new_name):
         if isinstance(new_name, str):
             self._name = new_name
+        else:
+            raise ValueError('Name must be a string.')
 
     def set_classtype(self, new_classtype):
         if isinstance(new_classtype, str):
             self._classtype = new_classtype
+        else:
+            raise ValueError('Classtype must be a string.')
 
     def set_level(self, new_level):
         if isinstance(new_level, int):
             self._level = new_level
+        else:
+            raise ValueError('Level must be an integer.')
