@@ -5,3 +5,68 @@
 4. 
     a. In this piece of code it handles message passing at one point. This point is when the attack function tells the other player inputted to take damage, where the other player runs the take_damage function\
     b. The two objects in this example pass messages at three points, the first being when the player runs open_chest which tells the chest to open, and then the chest tells the player to collect, the second message pass, then the player attempts to open the chest again, which doesn't send an additional message to the player object because it is empty
+5. 
+    a. 
+    ``` python
+        x = 5
+        y = 7
+
+        def add(x, y):
+            print(x + y)
+
+        add(x, y)
+    ```
+    b.
+    ``` python
+        name_list = ['Ali', 'Ben', 'Cat', 'Doge', 'Eggebert', 'Fred', 'Grod']
+        for name in name_list:
+            print(f'Welcome, {name}!')
+    ```
+    c.
+    ```python
+        class Animal:
+            def __init__(self):
+                self.sound = ""
+
+            def make_sound(self):
+                pass
+
+        class Dog(Animal):
+            def __init__(self):
+                self.sound = "woof"
+
+            def make_sound(self):
+                print("Dog goes woof")
+
+        class Cat(Animal):
+            def __init__(self):
+                self.sound = "meow"
+
+            def make_sound(self):
+                print("Cat goes meow")
+
+        class Cow(Animal):
+            def __init__(self):
+                self.sound = "moo"
+
+            def make_sound(self):
+                print('Cow goes moo')
+
+
+        animals = [Dog(), Cat(), Cow()]
+        for a in animals:
+            a.make_sound()
+    ```
+    d.
+    ```python
+        words = ["hello", "world", "!"]
+        sentence = " ".join(words)
+
+        print(sentence)
+    ```
+    e.
+    ```python
+        fruit_stock = ["apple", "banana", "cherry"]
+        for fruit in range(len(fruit_stock)):
+            print(fruit, fruit_stock[fruit])
+
