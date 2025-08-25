@@ -8,7 +8,10 @@ while True:
         undid = 1
     else:
         if word == 'redo':
-            stack = redostack.copy()
+            try:
+                stack.append(redostack[len(stack)])
+            except:
+                continue
         else:
             stack.append(word)
             redostack.append(word)
