@@ -1,0 +1,4 @@
+ScreenSize = 1024       outputs Desktop     tests boundary
+ScreenSize = 1023       outputs Desktop     tests boundary
+ScreenSize = 768        outputs Tablet      tests boundary
+ScreenSize = X          outputs Phone       tests abnormal data

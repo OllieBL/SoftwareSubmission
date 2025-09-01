@@ -1,0 +1,17 @@
+BEGIN Search (SearchItem)
+    Set LastIndex to the number of elements in ItemArray
+    Index = 1
+    Found = FALSE
+    WHILE Found = FALSE OR Index < LastIndex
+        IF ItemArray[Index] = SearchItem THEN
+            Found = TRUE
+        ELSE 
+            Index = Index + 1
+        ENDIF
+    ENDWHILE     
+    IF Found = TRUE THEN
+        Display 'Position', Index
+    ELSE
+        Display 'Not found'
+    ENDIF
+END Search
